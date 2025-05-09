@@ -29,5 +29,5 @@
 
 --create table clanovi(
 --grupa int,
---polaznik int,
+--polaznik int
 --);
