@@ -27,3 +27,7 @@
 --email varchar(100)
 --);
 
+--create table clanovi(
+--grupa int,
+--polaznik int,
+--);
