@@ -7,3 +7,10 @@
 --sifra int,
 --pozicija varchar(50)
 --);
+
+--create table sticenik(
+--sifra int,
+--ime varchar(50),
+--vrsta varchar(50),
+--spol varchar(50)
+--);
