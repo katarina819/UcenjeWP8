@@ -12,3 +12,9 @@
 --naziv varchar(50),
 --cijena decimal(18,2)
 --);
+
+--create table stavke(
+--racun int,
+--proizvod int,
+--kolicina decimal(5,3)
+--);
