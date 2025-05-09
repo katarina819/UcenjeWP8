@@ -14,3 +14,9 @@
 --vrsta varchar(50),
 --spol varchar(50)
 --);
+
+--create table prostor(
+--sifra int,
+--naziv varchar(50),
+--vrsta varchar(50)
+--);
