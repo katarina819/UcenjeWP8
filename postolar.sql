@@ -14,3 +14,15 @@
 --prezime varchar(50),
 --email varchar (100) 
 --);
+
+--create table popravci(
+--sifra int,
+--datum datetime,
+--opiskvara varchar(100)
+--);
+
+--create table segrti(
+--sifra int,
+--ime varchar(50),
+--prezime varchar(50)
+--);
