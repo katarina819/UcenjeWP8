@@ -8,14 +8,18 @@
 --pozicija varchar(50)
 --);
 
---create table sticenik(
+--drop table sticenik;
+
+--create table sticenici(
 --sifra int,
 --ime varchar(50),
 --vrsta varchar(50),
 --spol varchar(50)
 --);
 
---create table prostor(
+--drop table prostor;
+
+--create table prostori(
 --sifra int,
 --naziv varchar(50),
 --vrsta varchar(50)
