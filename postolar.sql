@@ -1,28 +1,36 @@
-﻿--create database postolar;
---use postolar;
+﻿use master;
+go
+drop database if exists postolar;
+go
+create database postolar;
+go
+use postolar;
 
---create table obuce(
---sifra int,
---velicina int,
---tip varchar(50),
---boja varchar(50)
---);
+create table korisnici(
+sifra int not null primary key identity(1,1),
+ime varchar(50),
+prezime varchar(50),
+email varchar (100) not null 
+);
 
---create table korisnici(
---sifra int,
---ime varchar(50),
---prezime varchar(50),
---email varchar (100) 
---);
+create table obuce(
+sifra int not null primary key identity(1,1),
+korisnik int not null references korisnici(sifra),
+velicina int not null,
+tip varchar(50) not null
+);
 
---create table popravci(
---sifra int,
---datum datetime,
---opiskvara varchar(100)
---);
 
---create table segrti(
---sifra int,
---ime varchar(50),
---prezime varchar(50)
---);
+create table segrti(
+sifra int not null primary key identity (1,1),
+ime varchar(50),
+prezime varchar(50)
+);
+
+create table popravci(
+sifra int not null primary key identity(1,1),
+obuca int not null references obuce(sifra),
+segrt int not null references segrti(sifra),
+datum datetime,
+opiskvara varchar(100)
+);
