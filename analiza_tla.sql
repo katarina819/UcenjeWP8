@@ -33,7 +33,7 @@ sifra int not null primary key identity(1,1),
 datum datetime,
 uzoraktla int not null references uzorcitla(sifra),
 analiticar int not null references analiticari(sifra),
-rezultatanalize decimal (18,2) not null
+pHvrijednost decimal (4,2) not null
 );
 
 
@@ -76,7 +76,7 @@ values
 ('Ema', 'Tomić', 'ema.tomic@email.com', 'Agronomski tehničar'),
 ('Dario', 'Knežević', 'dario.knezevic@email.com', 'Diplomirani inženjer zaštite okoliša');
 
-insert into analize(datum, analiticar, uzoraktla, rezultatanalize)
+insert into analize(datum, analiticar, uzoraktla, pHvrijednost)
 values
 ('2025-04-05', 1, 1, 5.75),
 ('2025-04-06', 2, 2, 6.20),
