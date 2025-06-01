@@ -10,14 +10,14 @@ create table osobe(
 sifra int not null primary key identity (1,1),
 ime varchar(50),
 prezime varchar(50),
-pozicija varchar(50)
+pozicija varchar(100)
 );
 
 
 create table prostori(
 sifra int not null primary key identity(1,1),
-naziv varchar(50),
-vrsta varchar(50)
+naziv varchar(100),
+vrsta varchar(100)
 );
 
 create table sticenici(
@@ -49,20 +49,20 @@ values
 ('Grga','Presečan', 'privremeni skrbnik');
 
 insert into prostori (naziv, vrsta) values
-('Glavno sklonište', 'Sklonište'),
-('Karantena A', 'Karantena'),
-('Ured udruge', 'Ured'),
-('Ambulanta', 'Ambulanta'),
-('Prostor za mačke', 'Privremeni smještaj'),
-('Vanjsko igralište', 'Vanjski prostor'),
-('Magacin hrane', 'Skladište'),
-('Operacijska sala', 'Operacijski prostor'),
-('Skladište', 'Skladište'),
-('Volonterska soba', 'Edukacijski prostor'),
+('Glavno sklonište', 'Sklonište za štićenike'),
+('Karantena A', 'Karantena za štićenike'),
+('Ured udruge', 'Ured za osobe'),
+('Ambulanta', 'Ambulanta za štićenike'),
+('Prostor za mačke', 'Privremeni smještaj za štićenike'),
+('Vanjsko igralište', 'Vanjski prostor za štićenike i osobe'),
+('Skladište hrane', 'Skladište za čuvanje hrane'),
+('Operacijska sala', 'Operacijski prostor za štićenike'),
+('Skladište', 'Skladište za ostale stvari'),
+('Volonterska soba', 'Edukacijski prostor za osobe'),
 ('Prostor za udomljavanje', 'Prostor za posjetitelje'),
-('Privremeni smještaj', 'Privremeni smještaj'),
-('Prostor za pse', 'Privremnei smještaj'),
-('Prostor za ostale životinje', 'Privremeni smještaj');
+('Privremeni smještaj', 'Privremeni smještaj za štićenike'),
+('Prostor za pse', 'Privremeni smještaj za štićenike'),
+('Prostor za ostale životinje', 'Privremeni smještaj za štićenike');
 
 
 insert into sticenici(ime, vrsta, spol, osoba, prostor) values
