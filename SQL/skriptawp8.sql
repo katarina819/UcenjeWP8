@@ -3,7 +3,7 @@ use master;
 go
 drop database if exists edunovawp8;
 go
-create database edunovawp8 collate Croatian_CI_AS;S
+create database edunovawp8 collate Croatian_CI_AS;
 go
 use edunovawp8;
 
@@ -103,3 +103,4 @@ insert into clanovi (grupa, polaznik) values
 
 insert into clanovi (grupa, polaznik) values
 (3,7), (3, 17), (3,27);
+
